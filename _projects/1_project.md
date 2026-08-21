@@ -1,81 +1,20 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Operational river slope for U.S. flood mapping
+description: Satellite-derived river slopes now the first-priority input to NOAA's HAND-FIM, worth an average 31% gain in flood-map accuracy.
+img:
 importance: 1
-category: work
+category: flood
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+**The problem.** River slope drives the synthetic rating curves inside NOAA's operational flood inundation mapping system (OWP HAND-FIM). Those slopes were computed from the national 3DEP digital elevation model, which is hydroconditioned to guarantee downstream flow. That conditioning, combined with the genuinely flat gradients of real rivers, produced many erroneous slope values — and because a national DEM cannot realistically be updated often, the slopes were static.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**The approach.** Better measurements already existed, from NASA's ICESat-2 laser altimetry (the IRIS dataset) and the SWOT mission, but they were described against a different river network than the operational model uses. I built a spatial joining framework to reconcile the two, which is what allowed the satellite observations to reach the model at all.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+**The outcome.** Improved slopes were merged into [NOAA-OWP/inundation-mapping](https://github.com/NOAA-OWP/inundation-mapping/pull/1505) in May 2025 as the **first-priority** slope source, ahead of the NWM hydrofabric and the legacy DEM computation. Across eight U.S. flood events benchmarked against high-precision flood maps, mapping accuracy improved by an average of **31%** (Critical Success Index). Two products were released: FIM HF IRIS and NextGen HF IRIS.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+**Artifacts**
+- Paper: *Scientific Data* 12, 1657 (2025)
+- Data: [Zenodo](https://doi.org/10.5281/zenodo.21632749) · [HydroShare](https://doi.org/10.4211/hs.1532f4cb360244f9a6ba772ebd428180)
+- Coverage: [CIROH news](https://awi.ua.edu/2025/09/26/new-satellite-derived-river-slope-database-helps-improves-u-s-flood-forecasts/)

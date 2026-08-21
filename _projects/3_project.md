@@ -1,81 +1,19 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://www.wikipedia.org/
+title: Global patterns of gully occurrence
+description: The first global assessment of gully head density and susceptibility, at 1 km² resolution.
+img:
 importance: 3
-category: work
+category: erosion
+related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Gully erosion is a major driver of soil loss and land degradation worldwide, and an under-represented geo-hydrological hazard — yet before this work there was no global picture of where gullies occur, or of what controls them.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**Building the training data.** Machine learning at this scale is bottlenecked by labelled observations, not by algorithms. I designed a rapid scoring scheme — each 1 km² site scored 0, 1–5, 6–20, or more than 20 gully heads from high-resolution satellite imagery, in one to two minutes — and generated a global training set of **17,499 sites**: 12,005 randomly located across the land surface, plus 5,494 targeted in regions of particular interest. Repeat interpretation of the same sites agreed at r² = 0.95.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+**Modelling.** A 100-model random forest ensemble over 26 predictor variables spanning topography, soil, land cover and climate, trained and applied on HPC, published together with an explicit uncertainty layer showing where the ensemble disagrees.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+**Findings.** Global gully patterns arise from non-linear interactions among environmental factors, with strong regional variation in which factor dominates. Hotspots sensitive to human drivers include the Chinese Loess Plateau, the Ethiopian Highlands, and large parts of the Mediterranean and Sahel. Deserts also show high gully densities, but there the cause is natural rather than anthropogenic — a distinction with real land-management consequences.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+The maps are archived in the European Commission's [European Soil Data Centre](https://esdac.jrc.ec.europa.eu/content/global-patterns-gully-occurrence), and the work was covered by [BBC News](https://www.bbc.co.uk/news/resources/idt-61d57e25-d458-4785-8a37-3ef119a504c7).
