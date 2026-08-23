@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-`riverjoin` released on [PyPI](https://pypi.org/project/riverjoin/) — spatial joining of river flowlines across heterogeneous hydrographic datasets.
+[`riverjoin`](https://github.com/sdmlua/riverjoin_py) released — spatial joining of river flowlines across heterogeneous hydrographic datasets.

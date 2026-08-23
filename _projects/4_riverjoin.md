@@ -3,7 +3,7 @@ layout: page
 title: riverjoin
 description: An open-source framework for joining river flowlines across heterogeneous hydrographic datasets.
 img:
-importance: 2
+importance: 1
 category: software
 ---
 

@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
+title: Teaching
 description: Teaching, supervision, and mentoring.
 nav: true
-nav_order: 6
+nav_order: 5
 ---
 
 ### Supervision
@@ -16,4 +16,5 @@ nav_order: 6
 
 ### Teaching
 
+- **Fall 2026 – present** — Teaching Assistant, *GIS Programming*, The University of Alabama.
 - **2025** — Guest lecture, *GIS Programming*, The University of Alabama.

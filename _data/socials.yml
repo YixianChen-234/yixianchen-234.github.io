@@ -1,9 +1,7 @@
-# Social links and profile identifiers, rendered in the order defined here.
+# Social links, rendered in the order defined here.
 # Docs: https://github.com/george-gca/jekyll-socials
-email: ychen223@ua.edu
 scholar_userid: CVTiODEAAAAJ # Google Scholar
-orcid_id: 0000-0002-7710-580X
-github_username: YixianChen-234
 linkedin_username: yixian-chen-765583166
+github_username: YixianChen-234
 research_gate_profile: Yixian-Chen-8
-rss_icon: true
+orcid_id: 0000-0002-7710-580X
