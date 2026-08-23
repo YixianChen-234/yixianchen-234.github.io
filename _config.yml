@@ -349,7 +349,66 @@ scholar:
 
   source: /_bibliography/
   bibliography: papers.bib
-  bibliography_template: bib
+  # Inlined rather than kept in _layouts/: the starter style contract forbids
+  # this repo from owning core component paths. jekyll-scholar accepts either a
+  # layout name or the template string itself (see utilities.rb#liquid_template).
+  bibliography_template: |
+    {%- comment -%}
+      Minimal numbered bibliography entry replacing the theme's card layout.
+      Format: "Authors (Year). Title. Journal, vol(no), pages."
+      The site author is bolded; the title links to the paper where a
+      DOI/URL exists, otherwise to a Google Scholar title search.
+      Numbering comes from CSS counters in _pages/publications.md.
+    {%- endcomment -%}
+    {%- assign target = null -%}
+    {%- if entry.doi -%}
+      {%- assign target = entry.doi | prepend: 'https://doi.org/' -%}
+    {%- elsif entry.url -%}
+      {%- assign target = entry.url -%}
+    {%- elsif entry.html -%}
+      {%- assign target = entry.html -%}
+    {%- elsif entry.pdf -%}
+      {%- assign target = entry.pdf -%}
+    {%- else -%}
+      {%- assign q = entry.title | url_encode -%}
+      {%- assign target = q | prepend: 'https://scholar.google.com/scholar?q=' -%}
+    {%- endif -%}
+    <div class="pub-entry" id="{{ entry.key }}">
+      <span class="pub-authors">
+        {%- assign n = entry.author_array | size -%}
+        {%- for author in entry.author_array -%}
+          {%- assign is_self = false -%}
+          {%- if site.scholar.last_name contains author.last -%}
+            {%- if site.scholar.first_name contains author.first -%}{%- assign is_self = true -%}{%- endif -%}
+          {%- endif -%}
+          {%- if forloop.last and n > 1 %}and {% endif -%}
+          {%- assign initial = author.first | slice: 0 -%}
+          {%- if is_self -%}
+            <strong>
+              {{- author.last }}
+              {{ initial -}}
+            </strong>
+          {%- else -%}
+            {{ author.last }}
+            {{ initial }}
+          {%- endif -%}
+          {%- unless forloop.last %}, {% endunless -%}
+        {%- endfor -%}
+      </span>
+      {%- if entry.year %} ({{ entry.year }}).{% endif %}
+      <a class="pub-title" href="{{ target }}" rel="external nofollow noopener" target="_blank">{{ entry.title }}</a>.
+      {%- assign venue = entry.journal | default: entry.booktitle -%}
+      {%- if venue %}
+        <em class="pub-venue">{{ venue }}</em>
+      {%- endif -%}
+      {%- if entry.volume %}, {{ entry.volume }}{%- endif -%}
+      {%- if entry.number %}({{ entry.number }}){%- endif -%}
+      {%- if entry.pages %}, {{ entry.pages }}{%- endif -%}
+      .
+      {%- if entry.note %}
+        <span class="pub-note">{{ entry.note }}.</span>
+      {%- endif -%}
+    </div>
   # Note: if you have latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.
   # See https://github.com/alshedivat/al-folio/issues/357.
