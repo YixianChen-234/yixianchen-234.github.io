@@ -6,6 +6,7 @@ description: publications by categories in reversed chronological order. generat
 nav: true
 nav_order: 2
 ---
+
 <style>
   #pub-articles ol.bibliography { counter-reset: pubnum 36; }
   .publications ol.bibliography {
@@ -34,6 +35,7 @@ nav_order: 2
 </style>
 
 <!-- _pages/publications.md -->
+
 {% include bib_search.liquid %}
 
 <div class="publications" id="pub-articles">

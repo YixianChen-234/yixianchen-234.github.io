@@ -16,5 +16,5 @@ nav_order: 5
 
 ### Teaching
 
-- **Fall 2026 – present** — Teaching Assistant, *GIS Programming*, The University of Alabama.
-- **2025** — Guest lecture, *GIS Programming*, The University of Alabama.
+- **Fall 2026 – present** — Teaching Assistant, _GIS Programming_, The University of Alabama.
+- **2025** — Guest lecture, _GIS Programming_, The University of Alabama.

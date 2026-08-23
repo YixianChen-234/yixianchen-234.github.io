@@ -75,7 +75,6 @@ nav_order: 1
   .rh-sec { margin-top: 2.6rem; border-bottom: 1px solid var(--global-divider-color); padding-bottom: 0.3rem; }
 </style>
 
-
 <h2 class="rh-sec">Flood</h2>
 
 <div class="rh-block">
@@ -120,7 +119,6 @@ nav_order: 1
     <div class="rh-body">Improving a single rating-curve parameter in isolation can make a calibrated model worse, because the calibration was balanced around the old values &mdash; something I found while validating the river slope work. This project addresses that directly.<br><br>It tests <strong>eleven calibration scenarios</strong> combining improved channel and floodplain attributes &mdash; geometry, slope, spatially varying channel and floodplain roughness, and topographically derived calibration points &mdash; and trains scenario-performance models that recommend the right calibration per reach given event magnitude and local conditions. Evaluation runs over roughly <strong>1,000 reach-scale benchmark samples</strong> using FIMbench, FIMserv and FIMeval.</div>
   </div>
 </div>
-
 
 <h2 class="rh-sec">Soil Erosion</h2>
 

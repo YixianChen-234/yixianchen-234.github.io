@@ -9,7 +9,7 @@ category: grants
 
 **Role:** Lead PI · **Funder:** NOAA Cooperative Institute for Research to Operations in Hydrology (CIROH), FY26 · **Award:** $300,000 USD · **Period:** July 2026 – March 2027
 
-Flood inundation mapping in NOAA's operational HAND-FIM framework depends on synthetic rating curves (SRCs), and those curves inherit every weakness in the channel data behind them: missing or simplified bathymetry, spatially uniform roughness, and uncertain river slope. This project starts from a result of my earlier work — that improving a *single* SRC parameter in isolation can introduce new errors elsewhere, because the existing calibration was balanced around the old values.
+Flood inundation mapping in NOAA's operational HAND-FIM framework depends on synthetic rating curves (SRCs), and those curves inherit every weakness in the channel data behind them: missing or simplified bathymetry, spatially uniform roughness, and uncertain river slope. This project starts from a result of my earlier work — that improving a _single_ SRC parameter in isolation can introduce new errors elsewhere, because the existing calibration was balanced around the old values.
 
 The project develops a sensitivity-informed framework that recommends and applies the most suitable SRC calibration scenario for a given reach and event. We test **eleven calibration scenarios** combining improved channel and floodplain attributes — geometry, river slope, spatially varying channel and floodplain roughness, and topographically derived calibration points — together with CONUS-scale SRC adjustment factors.
 
