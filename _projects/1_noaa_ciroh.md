@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Optimal synthetic rating curve calibration for U.S. flood inundation mapping
-description: NOAA CIROH FY26 · Lead PI · $300,000 · 2026–2027
+description: NOAA CIROH FY26 · PI · $300,000 · 2026–2027
 img:
 importance: 1
 category: grants
 ---
 
-**Role:** Lead PI · **Funder:** NOAA Cooperative Institute for Research to Operations in Hydrology (CIROH), FY26 · **Award:** $300,000 USD · **Period:** July 2026 – March 2027
+**Role:** PI · **Funder:** NOAA Cooperative Institute for Research to Operations in Hydrology (CIROH), FY26 · **Award:** $300,000 USD · **Period:** July 2026 – March 2027
 
 Flood inundation mapping in NOAA's operational HAND-FIM framework depends on synthetic rating curves (SRCs), and those curves inherit every weakness in the channel data behind them: missing or simplified bathymetry, spatially uniform roughness, and uncertain river slope. This project starts from a result of my earlier work — that improving a _single_ SRC parameter in isolation can introduce new errors elsewhere, because the existing calibration was balanced around the old values.
 

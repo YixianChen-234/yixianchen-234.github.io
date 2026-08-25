@@ -115,7 +115,7 @@ nav_order: 1
 <div class="rh-block">
   <div class="rh-text">
     <h3>Optimal synthetic rating curve calibration</h3>
-    <div class="rh-cite">NOAA CIROH FY26 · Lead PI · $300,000 · 2026&ndash;2027</div>
+    <div class="rh-cite">NOAA CIROH FY26 · PI · $300,000 · 2026&ndash;2027</div>
     <div class="rh-body">Improving a single rating-curve parameter in isolation can make a calibrated model worse, because the calibration was balanced around the old values &mdash; something I found while validating the river slope work. This project addresses that directly.<br><br>It tests <strong>eleven calibration scenarios</strong> combining improved channel and floodplain attributes &mdash; geometry, slope, spatially varying channel and floodplain roughness, and topographically derived calibration points &mdash; and trains scenario-performance models that recommend the right calibration per reach given event magnitude and local conditions. Evaluation runs over roughly <strong>1,000 reach-scale benchmark samples</strong> using FIMbench, FIMserv and FIMeval.</div>
   </div>
 </div>

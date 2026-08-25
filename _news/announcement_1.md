@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Began a **NOAA CIROH FY26 project as Lead PI**, on optimal synthetic rating curve calibration for U.S. operational flood inundation mapping.
+Began a **NOAA CIROH FY26 project as PI**, on optimal synthetic rating curve calibration for U.S. operational flood inundation mapping.
