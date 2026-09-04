@@ -1,3 +1,207 @@
 metadata:
-  last_updated: ''
-papers: {}
+  last_updated: '2026-09-04'
+papers:
+  CVTiODEAAAAJ:-f6ydRqryjwC:
+    citations: 3
+    title: Regional-scale cropland gully density prediction using machine learning approach enhanced by unequal probability stratified sampling
+    year: '2026'
+  CVTiODEAAAAJ:0EnyYjriUFMC:
+    citations: 12
+    title: Comparative analysis on morphological characteristics of erosion gullies measured by an unmanned aerial vehicle and traditional ground survey in South Central Tibet
+    year: '2019'
+  CVTiODEAAAAJ:2osOgNQ5qMEC:
+    citations: 18
+    title: Distribution and land use characteristics of alluvial fans in the Lhasa River Basin, Tibet
+    year: '2021'
+  CVTiODEAAAAJ:4DMP91E08xMC:
+    citations: 18
+    title: "\u9655\u5317\u5B50\u6D32\u53BF \u201C7\xB7 26\u201D \u7279\u5927\u66B4\u96E8\u5F15\u53D1\u7684\u5C0F\u6D41\u57DF\u571F\u58E4\u4FB5\u8680\u8C03\u67E5"
+    year: '2017'
+  CVTiODEAAAAJ:4JMBOYKVnBMC:
+    citations: 0
+    title: 'Gully erosion might become a larger problem than hitherto anticipated: insights from fieldwork and recent modelling advancements'
+    year: '2025'
+  CVTiODEAAAAJ:4TOpqqG69KYC:
+    citations: 22
+    title: "n \u9655\u5317\u5B50\u6D32 \u201C7 26\u201D \u66B4\u96E8\u540E\u5761\u8015\u5730\u7EC6\u6C9F\u4FB5\u8680\u53CA\u5176\u5F71\u54CD\u56E0\u7D20\u5206\u6790."
+    year: '2019'
+  CVTiODEAAAAJ:8k81kl-MbHgC:
+    citations: 48
+    title: Towards a better understanding of pathways of multiple co-occurring erosion processes on global cropland
+    year: '2023'
+  CVTiODEAAAAJ:9yKSN-GCB0IC:
+    citations: 15
+    title: 'Gully erosion on alluvial fans can be mitigated by altering the hydrological connectivity between an alluvial fan and the contributing catchment: a study in the Lhasa River basin'
+    year: '2022'
+  CVTiODEAAAAJ:HDshCWvjkbEC:
+    citations: 0
+    title: A Framework for Large-scale Flood Inundation Mapping and Evaluation over an Extensive Benchmark Database.
+    year: '2025'
+  CVTiODEAAAAJ:IWHjjKOFINEC:
+    citations: 16
+    title: 'FIMserv v. 1.0: A tool for streamlining Flood Inundation Mapping (FIM) using the United States operational hydrological forecasting framework'
+    year: '2025'
+  CVTiODEAAAAJ:IjCSPb-OGe4C:
+    citations: 2
+    title: A first data-driven gully head density map of the world
+    year: '2020'
+  CVTiODEAAAAJ:KlAtU1dfN6UC:
+    citations: 4
+    title: "\u57FA\u4E8E\u591A\u5143\u975E\u7EBF\u6027\u7A7A\u95F4\u5EFA\u6A21\u7684\u62C9\u8428\u6CB3\u6D41\u57DF\u6C9F\u8680\u53D1\u751F\u98CE\u9669\u63A2\u6D4B."
+    year: '2022'
+  CVTiODEAAAAJ:L8Ckcad2t8MC:
+    citations: 3
+    title: "\u9752\u85CF\u9AD8\u539F\u4FB5\u8680\u6C9F\u5206\u7C7B\u521D\u63A2"
+    year: '2025'
+  CVTiODEAAAAJ:LkGwnXOMwfcC:
+    citations: 27
+    title: "Investigation on soil erosion in small watersheds under \u201C7\xB7 26\u201D extreme rainstorm in Zizhou county, northern Shaanxi province"
+    year: '2017'
+  CVTiODEAAAAJ:M3ejUd6NZC8C:
+    citations: 21
+    title: Detection and automatic identification of loess sinkholes from the perspective of LiDAR point clouds and deep learning algorithm
+    year: '2024'
+  CVTiODEAAAAJ:QIV2ME_5wuYC:
+    citations: 0
+    title: 'Updating the US Hydrofabric Slope Parameter Using a Remote Sensing Dataset: Impact on Flood Inundation Mapping'
+    year: '2024'
+  CVTiODEAAAAJ:R3hNpaxXUhUC:
+    citations: 0
+    title: Random forest-based prediction of gully density on farmland in the Songnen typical black soil region of the Northeast, China
+    year: '2025'
+  CVTiODEAAAAJ:RHpTSmoSYBkC:
+    citations: 1
+    title: 'Brief Communication: Rise of the Guadalupe River-A Multifaceted Post Event Analysis of the July 4, 2025, Flood in Central Texas'
+    year: '2026'
+  CVTiODEAAAAJ:Se3iqnhoufwC:
+    citations: 19
+    title: "Characteristics of rill erosion and its influencing factors in slope farmland after \u201C7\xB7 26\u201D rainstorm in Zizhou County, Shaanxi Province"
+    year: '2019'
+  CVTiODEAAAAJ:Tyk-4Ss8FVUC:
+    citations: 31
+    title: "Variation in the sediment deposition behind check\u2010dams under different soil erosion conditions on the Loess Plateau, China"
+    year: '2018'
+  CVTiODEAAAAJ:ULOm3_A8WrAC:
+    citations: 3
+    title: Rill investigation on landslide scar highlights the shortcomings of current knowledge on erosion of shallow landslides
+    year: '2024'
+  CVTiODEAAAAJ:UeHWp8X0CEIC:
+    citations: 20
+    title: Accuracy assessment of the planar morphology of valley bank gullies extracted with high resolution remote sensing imagery on the Loess Plateau, China
+    year: '2019'
+  CVTiODEAAAAJ:UebtZRa9Y70C:
+    citations: 5
+    title: Channel morphology and sediment connectivity of Fangta watershed in Ansai County of Northern Shaanxi Province
+    year: '2019'
+  CVTiODEAAAAJ:W7OEmFMy1HYC:
+    citations: 60
+    title: "Predicting gully densities at sub\u2010continental scales: a case study for the Horn of Africa"
+    year: '2020'
+  CVTiODEAAAAJ:WF5omc3nYNoC:
+    citations: 27
+    title: 'Telling a different story: plant recolonization after landslides under a semi-arid climate'
+    year: '2018'
+  CVTiODEAAAAJ:Wp0gIr-vW9MC:
+    citations: 10
+    title: "\u9655\u5317\u9EC4\u571F\u533A\u9000\u8015\u524D (1976\u20141997) \u5761\u9762\u5207\u6C9F\u53D1\u80B2\u7279\u5F81"
+    year: '2017'
+  CVTiODEAAAAJ:Y0pCki6q_DkC:
+    citations: 114
+    title: Soil erosion and sediment interception by check dams in a watershed for an extreme rainstorm on the Loess Plateau, China
+    year: '2020'
+  CVTiODEAAAAJ:YOwf2qJgpHMC:
+    citations: 27
+    title: Response of gully morphology and density to the spatial and rainy-season monthly variation of rainfall at the regional scale of the Chinese Loess Plateau
+    year: '2024'
+  CVTiODEAAAAJ:YsMSGLbcyi4C:
+    citations: 0
+    title: 'Spatial variation of gully density and morphology and their controlling factors at a regional scale: a case study for the Chinese Loess Plateau'
+    year: '2020'
+  CVTiODEAAAAJ:ZeXyd9-uunAC:
+    citations: 0
+    title: Data-Driven Prediction of Gully Densities at the Global Scale
+    year: '2024'
+  CVTiODEAAAAJ:Zph67rFs4hoC:
+    citations: 30
+    title: Gully erosion susceptibility maps and influence factor analysis in the Lhasa River Basin on the Tibetan Plateau, based on machine learning algorithms
+    year: '2024'
+  CVTiODEAAAAJ:_FxGoFyzp5QC:
+    citations: 21
+    title: Quantifying the importance of different erosion processes and soil and water conservation measure collapses following an extreme rainstorm in the Chinese Loess Plateau
+    year: '2022'
+  CVTiODEAAAAJ:_Qo2XoVZTnwC:
+    citations: 0
+    title: Spatial and Temporal Variability in Global River Slopes from the Surface Water and Ocean Topography (SWOT) Satellite
+    year: '2025'
+  CVTiODEAAAAJ:_kc_bZDykSQC:
+    citations: 5
+    title: 'Modeling gully initiation by two codeless nonlinear methods: A case study in a small watershed on the Tibetan Plateau'
+    year: '2024'
+  CVTiODEAAAAJ:aqlVkmm33-oC:
+    citations: 0
+    title: "2000\u20142021 \u5E74\u8499\u53E4\u9AD8\u539F\u6E56\u51B0\u7269\u5019\u53D8\u5316\u7814\u7A76"
+    year: '2024'
+  CVTiODEAAAAJ:dhFuZR0502QC:
+    citations: 8
+    title: Detecting gully occurrence risks using multivariate nonlinear spatial modeling in the Lhasa River Basin of China
+    year: '2022'
+  CVTiODEAAAAJ:eQOLeE2rZwMC:
+    citations: 34
+    title: The magnitude of soil erosion on hillslopes with different land use patterns under an extreme rainstorm on the Northern Loess Plateau, China
+    year: '2020'
+  CVTiODEAAAAJ:hC7cP41nSMkC:
+    citations: 10
+    title: A framework for the evaluation of flood inundation predictions over extensive benchmark databases
+    year: '2025'
+  CVTiODEAAAAJ:hFOr9nPyWt4C:
+    citations: 0
+    title: Elementary Study on Gully Classification on the Qinghai-Tibet Plateau
+    year: '2025'
+  CVTiODEAAAAJ:hqOjcs7Dif8C:
+    citations: 13
+    title: "Channel sediment connectivity and influence factors in small watersheds under extreme rainstorm \u2013 a case study at Zizhou County, Shaanxi Province"
+    year: '2019'
+  CVTiODEAAAAJ:j3f4tGmQtD8C:
+    citations: 0
+    title: Global-Scale Analysis of River Slope Monthly Variation Based on the SWOT River Vector Data Product
+    year: '2025'
+  CVTiODEAAAAJ:kNdYIx-mwKoC:
+    citations: 3
+    title: Can CATPCA be utilized for spatial modeling? a case of the generation susceptibility of gully head in a watershed
+    year: '2023'
+  CVTiODEAAAAJ:mB3voiENLucC:
+    citations: 13
+    title: Global patterns of gully occurrence and their sensitivity to environmental changes
+    year: '2025'
+  CVTiODEAAAAJ:mVmsd5A6BfQC:
+    citations: 10
+    title: "\u897F\u85CF\u4E2D\u5357\u90E8\u4FB5\u8680\u6C9F\u5F62\u6001\u65E0\u4EBA\u673A\u822A\u6D4B\u4E0E\u4F20\u7EDF\u5730\u9762\u6D4B\u91CF\u7684\u5BF9\u6BD4\u5206\u6790"
+    year: '2019'
+  CVTiODEAAAAJ:qUcmZB5y_30C:
+    citations: 4
+    title: Merging remote sensing derived river slope datasets with high-resolution hydrofabrics for the United States
+    year: '2025'
+  CVTiODEAAAAJ:qjMakFHDy7sC:
+    citations: 74
+    title: Magnitude of soil erosion in small catchments with different land use patterns under an extreme rainstorm event over the Northern Loess Plateau, China
+    year: '2020'
+  CVTiODEAAAAJ:qxL8FJ1GzNcC:
+    citations: 9
+    title: "\u9655\u5317\u523A\u69D0\u6797\u6728\u751F\u957F\u53CA\u6797\u4E0B\u690D\u88AB\u4E0E\u571F\u58E4\u6C34\u5206\u5BF9\u79CD\u690D\u5BC6\u5EA6\u7684\u54CD\u5E94\u7279\u5F81"
+    year: '2017'
+  CVTiODEAAAAJ:r0BpntZqJG4C:
+    citations: 0
+    title: 'Rise of the Guadalupe River: A Multifaceted post-event Analysis of the July 2025 Texas Flood event'
+    year: '2025'
+  CVTiODEAAAAJ:roLk4NBRz8UC:
+    citations: 7
+    title: Response characteristics of locust growth, understory vegetation and soil moisture on planting density in northern Shaanxi.
+    year: '2017'
+  CVTiODEAAAAJ:ufrVoPGSRksC:
+    citations: 2
+    title: Data-driven prediction of gully densities and erosion risk at the global scale
+    year: '2022'
+  CVTiODEAAAAJ:zYLM7Y9cAGgC:
+    citations: 18
+    title: Characteristics of gully development in Northern Shaanxi hilly Loess region before Grain-for-Green programme (1976-1997)
+    year: '2017'
