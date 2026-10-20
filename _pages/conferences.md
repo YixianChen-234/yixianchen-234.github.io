@@ -8,7 +8,10 @@ nav_order: 3
 ---
 
 <style>
-  #pub-confs ol.bibliography { counter-reset: pubnum 19; }
+  /* First-authored entries (lead = true in papers.bib) are listed first, then the rest;
+     each list is sorted by year and month. The counter is reset on the container so
+     numbering runs on across both lists. */
+  #pub-confs { counter-reset: pubnum 19; }
   .publications ol.bibliography {
     list-style: none;
     padding-left: 0;
@@ -35,5 +38,6 @@ nav_order: 3
 </style>
 
 <div class="publications" id="pub-confs">
-{% bibliography --query @inproceedings %}
+{% bibliography --query @inproceedings[lead=true] %}
+{% bibliography --query @inproceedings[lead!=true] %}
 </div>

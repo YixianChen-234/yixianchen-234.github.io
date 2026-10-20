@@ -8,7 +8,10 @@ nav_order: 2
 ---
 
 <style>
-  #pub-articles ol.bibliography { counter-reset: pubnum 36; }
+  /* First-authored entries (lead = true in papers.bib) are listed first, then the rest;
+     each list is sorted by year and month. The counter is reset on the container so
+     numbering runs on across both lists. */
+  #pub-articles { counter-reset: pubnum 36; }
   .publications ol.bibliography {
     list-style: none;
     padding-left: 0;
@@ -39,5 +42,6 @@ nav_order: 2
 {% include bib_search.liquid %}
 
 <div class="publications" id="pub-articles">
-{% bibliography --query @article %}
+{% bibliography --query @article[lead=true] %}
+{% bibliography --query @article[lead!=true] %}
 </div>
