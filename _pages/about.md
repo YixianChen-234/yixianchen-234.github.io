@@ -15,11 +15,11 @@ profile:
     <p><a href="mailto:ychen223@ua.edu">ychen223@ua.edu</a></p>
     <p class="cv-download"><a href="/assets/pdf/cv.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i>&nbsp;Curriculum Vitae</a></p>
     <p class="profile-socials">
-    <a href="https://scholar.google.com/citations?user=CVTiODEAAAAJ" title="Google Scholar" aria-label="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
-    <a href="https://www.linkedin.com/in/yixian-chen-765583166" title="LinkedIn" aria-label="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://github.com/YixianChen-234" title="GitHub" aria-label="GitHub" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a>
-    <a href="https://www.researchgate.net/profile/Yixian-Chen-8/" title="ResearchGate" aria-label="ResearchGate" rel="external nofollow noopener" target="_blank"><i class="ai ai-researchgate"></i></a>
-    <a href="https://orcid.org/0000-0002-7710-580X" title="ORCID" aria-label="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a>
+    <a href="https://scholar.google.com/citations?user=CVTiODEAAAAJ" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i>Google Scholar</a>
+    <a href="https://www.linkedin.com/in/yixian-chen-765583166" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+    <a href="https://github.com/YixianChen-234" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+    <a href="https://www.researchgate.net/profile/Yixian-Chen-8/" rel="external nofollow noopener" target="_blank"><i class="ai ai-researchgate"></i>ResearchGate</a>
+    <a href="https://orcid.org/0000-0002-7710-580X" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i>ORCID</a>
     </p>
 
 selected_papers: false # set true to list papers marked selected={true} in the bibliography
@@ -84,11 +84,29 @@ latest_posts:
   .cv-download a { font-size: 0.9rem; }
   .cv-download i { color: var(--global-theme-color); }
 
-  /* Social icons under the profile photo (replaces the theme's bottom row). */
-  /* Selector matches the theme's `.profile .more-info p` margin reset so the top margin applies. */
-  .profile .more-info p.profile-socials { display: flex; flex-wrap: wrap; gap: 0.9rem; margin-top: 0.9rem; font-size: 1.6rem; line-height: 1; }
-  .profile-socials a { color: var(--global-text-color); text-decoration: none; }
-  .profile-socials a:hover { color: var(--global-theme-color); }
+  /* Social links under the profile photo (replaces the theme's bottom row), drawn as
+     outlined buttons with an icon and a label. Selector matches the theme's
+     `.profile .more-info p` margin reset so the top margin applies. */
+  .profile .more-info p.profile-socials { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.9rem; }
+  .profile-socials a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.22rem 0.55rem;
+    border: 1px solid currentColor;
+    border-radius: 6px;
+    color: var(--global-text-color);
+    font-family: Roboto, sans-serif; /* the body font; .more-info itself is monospace */
+    font-size: 0.85rem;
+    line-height: 1.3;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .profile-socials a i { font-size: 1.1em; }
+  .profile-socials a:hover { color: var(--global-theme-color); text-decoration: none; }
+
+  /* The theme prints the news heading in lowercase; capitalise it. */
+  .post article > h2 > a[href$="/news/"] { text-transform: capitalize; }
 </style>
 
 I study how water reshapes land, and how to make that predictable at scale. At the [Surface Dynamics Modeling Lab](https://sdml.ua.edu/) I work on **flood inundation mapping (FIM)** for [CIROH](https://ciroh.ua.edu/), a NOAA cooperative institute, on how the U.S. operational flood model represents river channels and floodplains: I bring satellite measurements of river slope from NASA's ICESat-2 and SWOT missions onto the model's river network with a [spatial joining framework](https://github.com/sdmlua/riverjoin_py) I built, track how river slope changes through time, and study which channel and floodplain attributes should be calibrated together for different places and flood sizes. My longer-running work is on **gully erosion**, the cutting of deep channels into hillslopes and valleys by concentrated runoff during heavy rain: how gullies form and develop, what controls their morphology and density, and how they respond to extreme rainstorms and vegetation restoration &mdash; from field and remote-sensing measurement on the Chinese Loess Plateau to [modelling gully occurrence worldwide](https://esdac.jrc.ec.europa.eu/content/global-patterns-gully-occurrence).
