@@ -108,14 +108,14 @@ nav_order: 1
     <div class="rh-body">Operational models treat river slope as a fixed property, but water-surface slope varies with discharge, season and channel change. Using <strong>Hydrocron</strong>, NASA's SWOT time-series service, I collected every available observation worldwide between August 2023 and May 2025, queried against SWORD v16 reach identifiers.<br><br>For each reach I extracted water-surface slope, elevation, width and detected area <strong>together with their uncertainty estimates and quality flags</strong> &mdash; producing a global, monthly, reach-level slope dataset that carries its own error budget, and the basis for supplying time-corresponding rather than static slope to flood models.</div>
   </div>
   <div class="rh-fig">
-    <figure><img src="{{ '/assets/img/research/temporal-slope-1.webp' | relative_url }}" width="2400" height="1014" loading="lazy" decoding="async" data-zoom-src="{{ '/assets/img/research/temporal-slope-1-full.png' | relative_url }}" alt="Temporal variability of global river slope from SWOT"><figcaption>Relative variability of water-surface slope worldwide from SWOT.</figcaption></figure>
+    <figure><img src="{{ '/assets/img/research/temporal-slope-1.webp' | relative_url }}" width="2400" height="1014" loading="lazy" decoding="async" data-zoom-src="{{ '/assets/img/research/temporal-slope-1-zoom.webp' | relative_url }}" alt="Temporal variability of global river slope from SWOT"><figcaption>Relative variability of water-surface slope worldwide from SWOT.</figcaption></figure>
   </div>
 </div>
 
 <div class="rh-block">
   <div class="rh-text">
     <h3>Optimal synthetic rating curve calibration</h3>
-    <div class="rh-cite">NOAA CIROH FY26 · PI · $300,000 · 2026&ndash;2027</div>
+    <div class="rh-cite">NOAA CIROH FY26 · PI · $300K total (UA and USU) · 2026&ndash;2027</div>
     <div class="rh-body">NOAA's operational HAND-FIM system turns National Water Model flow forecasts into flood maps through a <strong>synthetic rating curve</strong> for every river reach &mdash; a computed link between flow and water level, built from the channel's shape, slope and roughness and calibrated against observed floods. Better versions of those inputs now exist, but improving one in isolation can make the calibrated model worse, because the calibration was balanced around the old values &mdash; something I found while validating the river slope work. This project tests <strong>eleven calibration scenarios</strong> combining improved riverbed shape (bathymetry), slope and land-cover-based roughness, and trains models that recommend the best calibration for each reach, evaluated over roughly <strong>1,000 reach-scale benchmark samples</strong>.<br><br>First results from three benchmark floods show that the answer depends on the place and the event &mdash; <strong>no single calibration wins everywhere</strong>. In Conway, Arkansas, land-cover-based roughness raised map accuracy by 18% and halved false alarms compared with the current operational calibration; in Goldsboro, North Carolina, improved bathymetry gained 11% even though the operational model already did well there. Stacking every improvement at once raised accuracy but inflated false alarms &mdash; the trade-off that makes a per-reach recommendation necessary.</div>
   </div>
   <div class="rh-fig">
