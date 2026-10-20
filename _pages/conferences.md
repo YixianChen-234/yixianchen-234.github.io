@@ -8,7 +8,7 @@ nav_order: 3
 ---
 
 <style>
-  #pub-confs ol.bibliography { counter-reset: pubnum 18; }
+  #pub-confs ol.bibliography { counter-reset: pubnum 19; }
   .publications ol.bibliography {
     list-style: none;
     padding-left: 0;
