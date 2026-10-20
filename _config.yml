@@ -355,15 +355,17 @@ scholar:
     {%- comment -%}
       Minimal numbered bibliography entry replacing the theme's card layout.
       Format: "Authors (Year). Title. Journal, vol(no), pages."
-      The site author is bolded; the title links to the paper where a
-      DOI/URL exists, otherwise to a Google Scholar title search.
+      The site author is bolded and a corresponding author (the `corresponding`
+      field, matched by last name) gets an asterisk. The title links to `url`
+      (the link used in the CV) if set, else the DOI, else a Google Scholar
+      title search.
       Numbering comes from CSS counters in _pages/publications.md.
     {%- endcomment -%}
     {%- assign target = null -%}
-    {%- if entry.doi -%}
-      {%- assign target = entry.doi | prepend: 'https://doi.org/' -%}
-    {%- elsif entry.url -%}
+    {%- if entry.url -%}
       {%- assign target = entry.url -%}
+    {%- elsif entry.doi -%}
+      {%- assign target = entry.doi | prepend: 'https://doi.org/' -%}
     {%- elsif entry.html -%}
       {%- assign target = entry.html -%}
     {%- elsif entry.pdf -%}
@@ -382,14 +384,16 @@ scholar:
           {%- endif -%}
           {%- if forloop.last and n > 1 %}and {% endif -%}
           {%- assign initial = author.first | slice: 0 -%}
+          {%- assign star = '' -%}
+          {%- if entry.corresponding and entry.corresponding contains author.last -%}{%- assign star = '*' -%}{%- endif -%}
           {%- if is_self -%}
             <strong>
               {{- author.last }}
-              {{ initial -}}
+              {{ initial }}{{ star -}}
             </strong>
           {%- else -%}
             {{ author.last }}
-            {{ initial }}
+            {{ initial }}{{ star }}
           {%- endif -%}
           {%- unless forloop.last %}, {% endunless -%}
         {%- endfor -%}
@@ -446,6 +450,7 @@ filtered_bibtex_keywords:
     bibtex_show,
     blog,
     code,
+    corresponding,
     dimensions,
     eprint,
     google_scholar_id,
