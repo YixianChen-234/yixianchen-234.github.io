@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Optimal synthetic rating curve calibration for U.S. flood inundation mapping
-description: NOAA CIROH FY26 · PI · $300K total (UA and USU) · 2026–2027
+description: NOAA CIROH FY26 · PI · $300K total · 2026–2027
 img:
 importance: 1
 category: grants
