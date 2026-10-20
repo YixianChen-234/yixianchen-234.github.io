@@ -173,7 +173,7 @@ nav_order: 1
 
 <div class="rh-block">
   <div class="rh-text">
-    <h3>Measuring every erosion process after an extreme rainstorm</h3>
+    <h3>Catchment-scale erosion contributions of different processes</h3>
     <div class="rh-cite"><span class="rh-me">Chen Y</span>, Vanmaercke M, Jiao J, Bai L, Tang B, Wang N, Zhang Y, Wang H (2023). <em>Land Degradation &amp; Development</em> 34(2), 403&ndash;422. <a href="https://doi.org/10.1002/ldr.4468">DOI</a></div>
     <div class="rh-body">After a rainstorm with an estimated 200-year return period struck Zizhou County in July 2017, I went to study gully erosion &mdash; and measured every other process as well. That decision produced the result.<br><br>Landsliding contributed 4,433 &plusmn; 657 t km<sup>&minus;2</sup> (37 &plusmn; 4%) and the <strong>collapse of terraces and check dams 3,927 &plusmn; 1,009 t km<sup>&minus;2</sup> (33 &plusmn; 4%)</strong>, ahead of rill erosion (24 &plusmn; 3%) and gully erosion (7 &plusmn; 4%). The engineered erosion controls, once they failed, were the second-largest sediment source in the catchment &mdash; many failures traceable to maintenance gaps and design choices rather than to the storm alone. The low gully contribution is the mirror-image finding: evidence that vegetation restoration has worked.</div>
   </div>
