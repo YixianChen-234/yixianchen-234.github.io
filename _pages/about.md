@@ -14,9 +14,16 @@ profile:
     <p>Tuscaloosa, AL 35401, USA</p>
     <p><a href="mailto:ychen223@ua.edu">ychen223@ua.edu</a></p>
     <p class="cv-download"><a href="/assets/pdf/cv.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i>&nbsp;Curriculum Vitae</a></p>
+    <p class="profile-socials">
+    <a href="https://scholar.google.com/citations?user=CVTiODEAAAAJ" title="Google Scholar" aria-label="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
+    <a href="https://www.linkedin.com/in/yixian-chen-765583166" title="LinkedIn" aria-label="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/YixianChen-234" title="GitHub" aria-label="GitHub" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.researchgate.net/profile/Yixian-Chen-8/" title="ResearchGate" aria-label="ResearchGate" rel="external nofollow noopener" target="_blank"><i class="ai ai-researchgate"></i></a>
+    <a href="https://orcid.org/0000-0002-7710-580X" title="ORCID" aria-label="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a>
+    </p>
 
 selected_papers: false # set true to list papers marked selected={true} in the bibliography
-social: true # includes social icons at the bottom of the page
+social: false # social icons are shown under the profile photo instead (profile-socials above); keep in sync with _data/socials.yml
 
 announcements:
   enabled: true # includes a list of news items
@@ -57,31 +64,6 @@ latest_posts:
   .publications ol.bibliography .col-sm-2.abbr { display: none; }
   .publications ol.bibliography .col-sm-8 { flex: 0 0 100%; max-width: 100%; }
 
-  /* Contact icons: stack a label under each, and label them properly
-     (the plugin's own titles read "Scholar userid", "Orcid id", ...). */
-  .contact-icons { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.1rem; }
-  .contact-icons a {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.3rem;
-    text-decoration: none;
-  }
-  .contact-icons a::after {
-    font-size: 0.68rem;
-    line-height: 1;
-    color: var(--global-text-color-light);
-    white-space: nowrap;
-  }
-  .contact-icons a[href*="scholar.google"]::after { content: "Google Scholar"; }
-  .contact-icons a[href*="linkedin"]::after       { content: "LinkedIn"; }
-  .contact-icons a[href*="github"]::after         { content: "GitHub"; }
-  .contact-icons a[href*="researchgate"]::after   { content: "ResearchGate"; }
-  .contact-icons a[href*="orcid"]::after          { content: "ORCID"; }
-
-  /* contact_note is empty; drop the element so it leaves no gap. */
-  .contact-note:empty { display: none; }
-
   /* Education / Experience lists */
   .cv-list { margin: 0.2rem 0 0.6rem; }
   .cv-item { display: flex; gap: 1.1rem; padding: 0.55rem 0; border-bottom: 1px solid var(--global-divider-color); }
@@ -90,6 +72,8 @@ latest_posts:
   .cv-what { flex: 1 1 auto; line-height: 1.5; }
   .cv-org { color: var(--global-text-color); }
   .cv-note { font-size: 0.87rem; color: var(--global-text-color-light); }
+  /* A concurrent appointment nested under its parent entry, as in the CV. */
+  .cv-concurrent { margin-top: 0.35rem; padding-left: 0.75rem; border-left: 2px solid var(--global-divider-color); }
   @media (max-width: 576px) {
     .cv-item { flex-direction: column; gap: 0.15rem; }
     .cv-when { flex: none; }
@@ -99,6 +83,11 @@ latest_posts:
   .cv-download { margin-top: 0.35rem; }
   .cv-download a { font-size: 0.9rem; }
   .cv-download i { color: var(--global-theme-color); }
+
+  /* Social icons under the profile photo (replaces the theme's bottom row). */
+  .profile-socials { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 0.5rem; font-size: 1.35rem; line-height: 1; }
+  .profile-socials a { color: var(--global-text-color); text-decoration: none; }
+  .profile-socials a:hover { color: var(--global-theme-color); }
 </style>
 
 I study how water reshapes land, and how to make that predictable at scale. At the [Surface Dynamics Modeling Lab](https://sdml.ua.edu/) I work on **flood inundation mapping (FIM)** for [CIROH](https://ciroh.ua.edu/), a NOAA cooperative institute: with a [spatial joining framework](https://github.com/sdmlua/riverjoin_py) I built, I carried satellite river slopes from NASA's ICESat-2 and SWOT missions onto the river network of NOAA's operational HAND-FIM system, where they improved flood-map accuracy by an average of 31% across eight U.S. flood events and remain in operational use. I am now **PI on a $300,000 NOAA CIROH project** on how best to calibrate the model's synthetic rating curves. My longer-running work is on **gully erosion**, from nearly a decade of fieldwork on the Chinese Loess Plateau, where I lead a National Natural Science Foundation of China project, to the [first global assessment of gully occurrence](https://esdac.jrc.ec.europa.eu/content/global-patterns-gully-occurrence), whose maps are archived by the European Commission's Joint Research Centre and were covered by the [BBC](https://www.bbc.co.uk/news/resources/idt-61d57e25-d458-4785-8a37-3ef119a504c7).
@@ -119,16 +108,12 @@ I study how water reshapes land, and how to make that predictable at scale. At t
   <span class="cv-note">Improving spatial and temporal river slope data for U.S. operational flood inundation mapping</span></div>
 </div>
 <div class="cv-item">
-  <div class="cv-when">Jul 2022 &ndash; Jun 2023</div>
-  <div class="cv-what"><strong>Postdoctoral Researcher</strong><br>
-  <span class="cv-org">KU Leuven</span>, Belgium<br>
-  <span class="cv-note">Data-driven prediction of gully densities at the global scale</span></div>
-</div>
-<div class="cv-item">
   <div class="cv-when">Mar 2021 &ndash; Apr 2024</div>
   <div class="cv-what"><strong>Postdoctoral Researcher</strong><br>
   <span class="cv-org">Northwest University</span>, China<br>
-  <span class="cv-note">Morphological characteristics and volume estimating models of gullies on the Chinese Loess Plateau</span></div>
+  <span class="cv-note">Morphological characteristics and volume estimating models of gullies on the Chinese Loess Plateau</span>
+  <div class="cv-concurrent">Concurrently <strong>Postdoctoral Researcher</strong>, <span class="cv-org">KU Leuven</span>, Belgium, Jul 2022 &ndash; Jun 2023<br>
+  <span class="cv-note">Data-driven prediction of gully densities at the global scale</span></div></div>
 </div>
 </div>
 
