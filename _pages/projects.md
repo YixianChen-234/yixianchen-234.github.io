@@ -9,6 +9,21 @@ display_categories: [grants, software]
 horizontal: false
 ---
 
+<style>
+  /* Make the category labels readable section headings (the theme draws them in the
+     faint divider colour, right-aligned) and keep card titles to card size. */
+  .projects h2.category {
+    color: var(--global-text-color);
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 1.35rem;
+    margin-top: 1.6rem;
+    padding-bottom: 0.3rem;
+  }
+  .projects .card .card-title { font-size: 1.2rem; line-height: 1.35; }
+  .projects .card .card-text { font-size: 0.88rem; color: var(--global-text-color-light); }
+</style>
+
 <!-- pages/projects.md -->
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
