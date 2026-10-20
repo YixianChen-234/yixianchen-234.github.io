@@ -173,12 +173,14 @@ nav_order: 1
 
 <div class="rh-block">
   <div class="rh-text">
-    <h3>When erosion control becomes the erosion</h3>
+    <h3>Measuring every erosion process after an extreme rainstorm</h3>
     <div class="rh-cite"><span class="rh-me">Chen Y</span>, Vanmaercke M, Jiao J, Bai L, Tang B, Wang N, Zhang Y, Wang H (2023). <em>Land Degradation &amp; Development</em> 34(2), 403&ndash;422. <a href="https://doi.org/10.1002/ldr.4468">DOI</a></div>
     <div class="rh-body">After a rainstorm with an estimated 200-year return period struck Zizhou County in July 2017, I went to study gully erosion &mdash; and measured every other process as well. That decision produced the result.<br><br>Landsliding contributed 4,433 &plusmn; 657 t km<sup>&minus;2</sup> (37 &plusmn; 4%) and the <strong>collapse of terraces and check dams 3,927 &plusmn; 1,009 t km<sup>&minus;2</sup> (33 &plusmn; 4%)</strong>, ahead of rill erosion (24 &plusmn; 3%) and gully erosion (7 &plusmn; 4%). The engineered erosion controls, once they failed, were the second-largest sediment source in the catchment &mdash; many failures traceable to maintenance gaps and design choices rather than to the storm alone. The low gully contribution is the mirror-image finding: evidence that vegetation restoration has worked.</div>
   </div>
-  <div class="rh-fig">
-    <figure class="rh-half"><img src="{{ '/assets/img/research/rainstorm-1.webp' | relative_url }}" width="1003" height="770" loading="lazy" decoding="async" data-zoom-src="{{ '/assets/img/research/rainstorm-1.png' | relative_url }}" alt="Total erosion intensity and composition"><figcaption>Total erosion intensity and its composition in the three catchments. Collapsed conservation structures (light blue) rival the natural processes; the big dam alone contributed 23,199 t km<sup>&minus;2</sup> in QSG.</figcaption></figure>
+  <div class="rh-fig rh-fig--multi">
+    <figure style="flex: 0.9549 1 0"><img src="{{ '/assets/img/research/rainstorm-fig6.webp' | relative_url }}" width="1419" height="1486" loading="lazy" decoding="async" data-zoom-src="{{ '/assets/img/research/rainstorm-fig6.jpg' | relative_url }}" alt="Erosion observations on new terraces"><figcaption>Erosion on new terraces: (a) overview; (b) collapse along a terrace cut-slope; (c) embankment breach at concave sections; (d) rills and gullies on the terrace field; (e) rills and gullies on the connecting road.</figcaption></figure>
+    <figure style="flex: 1.3318 1 0"><img src="{{ '/assets/img/research/rainstorm-fig8.webp' | relative_url }}" width="1421" height="1067" loading="lazy" decoding="async" data-zoom-src="{{ '/assets/img/research/rainstorm-fig8.jpg' | relative_url }}" alt="Three main cases of check-dam failure"><figcaption>Three main cases of check-dam failure: (a) spillway and (b) nearby dam-body collapse from clogged or undersized drainage holes; (c) spillway collapse from limited flood-release capacity; (d) dam-body collapse where no flood-release facility existed.</figcaption></figure>
+    <figure style="flex: 1.3026 1 0"><img src="{{ '/assets/img/research/rainstorm-1.webp' | relative_url }}" width="1003" height="770" loading="lazy" decoding="async" data-zoom-src="{{ '/assets/img/research/rainstorm-1.png' | relative_url }}" alt="Total erosion intensity and composition"><figcaption>Total erosion intensity and its composition in the three catchments. Collapsed conservation structures (light blue) rival the natural processes; the big dam alone contributed 23,199 t km<sup>&minus;2</sup> in QSG.</figcaption></figure>
   </div>
 </div>
 
