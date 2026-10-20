@@ -11,7 +11,7 @@ nav_order: 2
   /* First-authored entries (lead = true in papers.bib) are listed first, then the rest;
      each list is sorted by year and month. The counter is reset on the container so
      numbering runs on across both lists. */
-  #pub-articles { counter-reset: pubnum 36; }
+  #pub-articles { counter-reset: pubnum 35; }
   .publications ol.bibliography {
     list-style: none;
     padding-left: 0;
@@ -36,9 +36,17 @@ nav_order: 2
   .pub-venue { font-style: italic; }
   .pub-note { color: var(--global-text-color-light); font-size: 0.9em; }
   .publications ol.bibliography { margin-bottom: 0; }
+  /* The nav label stays "Publications" (page.title); show a fuller heading on the page
+     itself by replacing the layout's header with an identical one below. */
+  .post > header.post-header { display: none; }
 </style>
 
 <!-- _pages/publications.md -->
+
+<header class="post-header">
+  <h1 class="post-title">Peer-reviewed publications</h1>
+  <p class="post-description">{{ page.description }}</p>
+</header>
 
 {% include bib_search.liquid %}
 
