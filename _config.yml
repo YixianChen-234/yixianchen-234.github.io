@@ -13,9 +13,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  <span id="vercount_container_site_pv" style="display: none;">Site views: <span id="vercount_value_site_pv"></span>.</span>
-  <span id="vercount_container_site_uv" style="display: none;">Visitors: <span id="vercount_value_site_uv"></span>.</span>
-  <script defer src="https://events.vercount.one/js"></script>
+  <div style="margin-top: 0.75rem;"><a href="https://info.flagcounter.com/rzIg"><img src="https://s01.flagcounter.com/count2/rzIg/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" loading="lazy" style="border: 0; border-radius: 4px;"></a></div>
 keywords: flood inundation mapping, river slope, SWOT, ICESat-2, gully erosion, geomorphology, remote sensing, machine learning, hydrology, geospatial
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🌊 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -98,7 +96,7 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: false
 socials_in_search: false
 posts_in_search: false
