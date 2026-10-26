@@ -1,0 +1,10 @@
+---
+version: 1
+overrides:
+  assets/js/theme.js:
+    owner: al_folio_core
+    gem_version: 1.0.15
+    upstream_path: assets/js/theme.js
+    upstream_sha256: a1a07af6a468a10fc06ff3cf71d30b1b38ae8dc81674e8448c978080bbb78b81
+    local_sha256: 3a747306d27601c4e9101a1363169cc471e3cf9bf98d6c69d521dc0636f20561
+    acknowledged_at: "2026-10-26"
